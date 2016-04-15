@@ -68,3 +68,19 @@ names.forEach(function(name) {
 	})
 	console.log(videoAndTitlePairs);
 	return videoAndTitlePairs; 
+
+
+// Using MAP on the array type 
+
+Array.prototype.map = function(projectionFunction) {
+	var results = [];
+	this.forEach(function(itemInArray) {
+	  results.push(projectionFunction(itemInArray));
+	  console.log(results);
+	});
+
+	return results;
+	console.log('results ', results);
+};
+
+
