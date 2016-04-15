@@ -59,8 +59,12 @@ names.forEach(function(name) {
 	videoAndTitlePairs = [];
 
 
-	newReleases.forEach(function(id){
-		console.log('title ', id)
-	})
+	newReleases.forEach(function(object){
 
+		videoAndTitlePairs.push({
+			id: object.id, 
+			title: object.title
+		});
+	})
+	console.log(videoAndTitlePairs);
 	return videoAndTitlePairs; 
